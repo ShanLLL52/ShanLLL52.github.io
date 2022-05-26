@@ -1,5 +1,12 @@
-Here you can say lots of fun things about your site.
+Hello, my name is Shan Luo, a current Master student in NCSU.  
+The blogs will be the assignments for my data science course.  
 
-Maybe say a some things about yourself.
+* Some information about me:  
+    + I am from **China**.
+    + I am majored in *Statistics*.
+    + I am interesting in **data science** and **data analysis**.
+    + My favorite food is *hotpot*.
+    + I like to watch movies and listen to music.
+    + I am currently look for a job as a data analyst.
 
-Or maybe what you plan to blog about.
+The best way to contact me is email: *sluo10@ncsu.edu*.  
