@@ -1,5 +1,6 @@
 ---
 title: "Programming Background"
+author: "Shan Luo"
 date: '2022-06-08'
 ---
 
@@ -7,9 +8,16 @@ date: '2022-06-08'
 knitr::opts_chunk$set(echo = TRUE, fig.path = "/Users/sl666/Desktop/ST558/ShanLLL52.github.io/images/")
 ```
 
+```{r render, echo = TRUE, eval = FALSE}
+rmarkdown::render("/Users/sl666/Desktop/ST558/ShanLLL52.github.io/_Rmd/2022-06-08-ST558Blog2-post.Rmd", 
+          output_format = "github_document", 
+          output_dir = "/Users/sl666/Desktop/ST558/ShanLLL52.github.io/_posts",
+          output_options = list(
+            html_preview = FALSE))
+```
 ## ST558 Second Blog Post  
 
-I think R is more flexible compared to SAS, which means that we can write our own packages or we can use the others' packages. But R can be inefficient when it is dealling with big data. I like the help function since I can check the functions without searching documentation online. I think it's very convenient. And sometimes I use R as a calculator. I may miss the efficiency of the SAS since R takes a long time when process a large data. When I first time learned R, I felt that it is hard to find the correct function to use.  
+I think R is more flexible compared to SAS, which means that we can write our own packages or we can use the others' packages. But R can be inefficient when it is dealling with big data. I like the help function since I can check the functions without searching documentation online. I think it's very convenient. And sometimes I use R as a calculator. I may miss the efficiency of the SAS since R takes a long time when process a large data. When I first time learned R, I felt that it is hard to find the correct function to use but overall, it is not hard to understand or learn.  
 
 ## Example  
 
