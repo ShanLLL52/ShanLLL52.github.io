@@ -22,6 +22,6 @@ I used R and SAS before. I think R is more flexible compared to SAS, which means
 ## Example  
 
 ```{r plot}
-plot(iris)
+plot(cars)
 ```
 
