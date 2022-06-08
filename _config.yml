@@ -14,6 +14,7 @@ linkedin_username: "Shan Luo"
 #pinterest_username: username
 #youtube_username: username
 #googleplus_username: +username
+permalink: /:title.html
 
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
