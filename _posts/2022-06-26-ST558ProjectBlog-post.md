@@ -40,4 +40,4 @@ answer them after the analysis.
 
 [`Regular Repo`](https://github.com/ShanLLL52/ShanLLL52.github.io)
 
-[\`Project1 Repo](https://github.com/ShanLLL52/ST558Project1)
+[`Project1 Repo`](https://github.com/ShanLLL52/ST558Project1)
