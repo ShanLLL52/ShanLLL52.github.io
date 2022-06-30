@@ -75,7 +75,7 @@ countrysummary <- function(country = "all"){
 ```
 
 ```{r test func, echo=TRUE, eval=TRUE}
-countrysummary('china')
+as_tibble(countrysummary('china'))
 ```
 
 It returns COVID case information about China.  
