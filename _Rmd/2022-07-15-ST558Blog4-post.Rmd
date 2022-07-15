@@ -28,7 +28,7 @@ Random forest follows Bootstrap Aggregation idea. We will create multiple trees 
 
 ## Data  
 
-```{r read in, echo=TRUE, eval=TRUE}
+```{r read in, echo=TRUE, eval=TRUE, message=FALSE}
 heart <- read_csv("/Users/sl666/Desktop/ST558/heart.csv")
 heart$HeartDisease <- as.factor(heart$HeartDisease)
 heart$Sex <- as.factor(heart$Sex)
