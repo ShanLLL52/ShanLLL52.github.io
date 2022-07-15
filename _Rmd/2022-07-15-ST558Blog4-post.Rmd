@@ -1,0 +1,55 @@
+---
+title: "ST558 Fourth Blog Post"
+author: "Shan Luo"
+date: '2022-07-15'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(caret)
+```
+
+# Code for render  
+
+```{r render, echo = TRUE, eval = FALSE}
+rmarkdown::render("/Users/sl666/Desktop/ST558/ShanLLL52.github.io/_Rmd/2022-07-15-ST558Blog4-post.Rmd", 
+          output_format = "github_document", 
+          output_dir = "/Users/sl666/Desktop/ST558/ShanLLL52.github.io/_posts",
+          output_options = list(
+            html_preview = FALSE))
+```
+
+I think the most intersting method is random forest.  
+
+Random forest follows Bootstrap Aggregation idea. We will create multiple trees from bootstrap samples and average the results. But, we will use a random subset of predictors for each bootstrap tree fit instead of using all predictors. It may make bagged trees predictions more correlated, which can help with reduction of variation.  
+
+# Example  
+
+## Data  
+
+```{r read in, echo=TRUE, eval=TRUE}
+heart <- read_csv("/Users/sl666/Desktop/ST558/heart.csv")
+heart$HeartDisease <- as.factor(heart$HeartDisease)
+heart$Sex <- as.factor(heart$Sex)
+heart <- heart %>% select(HeartDisease, Age, Sex, RestingBP, Cholesterol)
+set.seed(1)
+trainIndex <- createDataPartition(heart$HeartDisease, p = 0.7, list = FALSE) 
+Train <- heart[trainIndex, ]
+Test <- heart[-trainIndex, ]
+```
+
+## Fit Model  
+
+```{r fit rf model, echo=TRUE, eval=TRUE}
+rffit <- train(HeartDisease ~ ., 
+                data = Train, 
+                method = "rf", 
+                trControl = trainControl(method = "cv",number = 5), 
+                preProcess = c("center", "scale"),
+               tuneGrid = data.frame(mtry = 1:4))
+rffit
+confusionMatrix(data = Test$HeartDisease, 
+                reference = predict(rffit, newdata = Test))
+```
+
