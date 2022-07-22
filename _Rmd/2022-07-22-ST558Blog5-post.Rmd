@@ -18,6 +18,6 @@ rmarkdown::render("./_Rmd/2022-07-22-ST558Blog5-post.Rmd",
             html_preview = FALSE))
 ```
 
-I think that I learned a lot about data science in this course and I will continue to use R going forward. Becuase R is the language that I am most familar with. Also, R is very convinent and has large user community, which is very helpful when I use R. Now I learned more about machine learning, especially training and test set, and knew a little bit about database as well as shiny app, which are very interesting. I have no idea how it may work in practice, but I believe I am more prepared. I will probably do some practice in database and shiny app. Before taking this course, I had experience in machine learning. After taking this course, I want to explore more about database as well as shiny app.  
+I think that I learned a lot about data science in this course and I will continue to use R going forward. Because R is the language that I am most familiar with. Also, R is very convenient and has large user community, which is very helpful when I use R. Now I learned more about machine learning, especially training and test set, and knew a little bit about database as well as shiny app, which are very interesting. I have no idea how it may work in practice, but I believe I am more prepared. I will probably do some practice in database and shiny app. Before taking this course, I had experience in machine learning. After taking this course, I want to explore more about database as well as shiny app.  
 
 
